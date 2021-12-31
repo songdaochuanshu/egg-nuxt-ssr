@@ -1,0 +1,74 @@
+{
+  "name": "nuxt-egg",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/proxy": "^2.1.0",
+    "ant-design-vue": "^1.7.4",
+    "babel-plugin-import": "^1.13.3",
+    "cross-env": "^5.2.0",
+    "crypto-js": "^4.1.1",
+    "egg": "^2.15.1",
+    "egg-cors": "^2.2.3",
+    "egg-jwt": "^3.1.7",
+    "egg-logrotator": "^3.1.0",
+    "egg-multipart": "^2.9.1",
+    "egg-mysql": "^3.0.0",
+    "egg-redis": "^2.4.0",
+    "egg-schedule": "^3.6.4",
+    "egg-scripts": "^2.11.0",
+    "egg-sequelize": "^5.2.0",
+    "egg-socket.io": "^4.1.6",
+    "socket.io-client": "^2.0.1",
+    "egg-static": "^2.2.0",
+    "egg-validate": "^2.0.2",
+    "less": "^4.1.1",
+    "less-loader": "^6.0.0",
+    "moment": "^2.24.0",
+    "mysql2": "^2.0.2",
+    "nuxt": "^2.15.3",
+    "qiniu": "^7.4.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@types/crypto-js": "^4.0.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon  --cluster --sticky --title=egg-server-nuxt_egg",
+    "stop": "egg-scripts stop --title=egg-server-nuxt_egg",
+    "dev": "egg-bin dev --sticky",
+    "debug": "egg-bin debug",
+    "asyncdb": "egg-bin dev --asyncdb true",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "松岛川树",
+  "license": "MIT"
+}
