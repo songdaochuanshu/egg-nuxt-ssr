@@ -8,7 +8,7 @@ This code block is integrated with Egg (NodeJS) + Nuxt.js (vuejs) to quickly dev
 
 ### Configuration file
 
-  配置plugin / config下文件
+  Configure Plugin / Config
 
 ### Development start
 
